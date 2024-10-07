@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Project</title>
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Google Icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="/index.css">
+        <style>
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .navHover:hover {
+                    color: teal;
+                }
+            .hoverCon1 {
+                display: none;
+                position: absolute;
+                background-color: rgb(0, 0, 0, 0.7);
+                width: 100%;
+                left:0%;
+                bottom: 0%;
+                padding: 5px 20px 5px 20px;
+                color: aliceblue;
+            }
+            #hoverBtn1:hover .hoverCon1 {
+                display: block;
+            }
+            #hoverBtn2:hover .hoverCon1 {
+                display: block;
+            }
+            #hoverBtn3:hover .hoverCon1 {
+                display: block;
+            }
+            #hoverBtn4:hover .hoverCon1 {
+                display: block;
+            }
+            #hoverBtn5:hover .hoverCon1 {
+                display: block;
+            }
+
+            .fimg {
+                object-fit: contain;
+                width: 100%;
+                height: 400px;
+                margin: auto;
+            }
+            .imgcontain {
+                object-fit: contain;
+                width: 100%;
+                height: 300px;
+                margin: auto;
+                padding: 5px;
+            }
+            #hoverBtn1 > .imgcontain {
+                object-fit: contain;
+                width: 100%;
+                height: 600px;
+            }
+            .card-body > a > p {
+                width: 95%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid bg-light">
+            <!--navbar-->
+            <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+                <div class="container d-flex justify-content-between" style="text-align: center;">
+                
+                    <button class="btn"><i class="material-icons">search</i></button>
+
+                    <a class="navbar-brand mx-auto" href="#">Electronic Hub</a>
+
+                    <div style="display: inline; align-items: center;">
+                        <a class="navlink fs-5" href="#">
+                            <span class="material-symbols-outlined" style="font-size: 19px;">manage_accounts</span>
+                            <span class="">Accounts</span>
+                        </a>
+                        <a class="navlink fs-5" href="#" data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas" aria-controls="offcanvasRight">
+                            <span class="material-symbols-outlined" style="font-size: 19px;">shopping_cart</span>
+                            <span class="">Shopping</span>
+                        </a>
+                        <!--offcanvas sidebar-->
+                        <div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                           <div class="offcanvas-header">
+                                <h5>Shopping Cart</h5>
+                                <h6>Show All</h6>
+                                <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+                           </div><hr/>
+                           <div class="offcanvas-body">
+                                <div class="d-flex py-1">
+                                    <img class="img-fluid" style="width: 50px; height:50px;" src="https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/m/s/s/-original-imah34qc6vptzasv.jpeg?q=70&crop=false" alt="MIVI products">
+                                    <h6>Mivi DuoPods i6 TWS, Engineered for Athletes, Playtime Bluetooth</h6>
+                                </div>
+                                <div class="d-flex py-1">
+                                    <img class="img-fluid" style="width: 50px; height:50px;" src="https://rukminim2.flixcart.com/image/612/612/l4vnbm80/home-security-camera/u/a/e/3-bhr5003in-indoor-outdoor-security-camera-xiaomi-original-imagfzf2gvkeftwn.jpeg?q=70" alt="MI products">
+                                    <h6>Mi 360 degree Home 1080p 2i Security Camera</h6>
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <!--collection section-->            
+            <div class="container pt-5"><hr/>
+                <div class="d-flex flex-row overflow-auto">
+                    <div class="p-2 navHover">Smartphones</div>
+                    <div class="p-2 navHover">Smartwatches</div>
+                    <div class="p-2 navHover">Android TVs</div>
+                    <div class="p-2 navHover">PCs</div>
+                    <div class="p-2 navHover">Headphones</div>
+                    <div class="p-2 navHover">Others</div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-sm-8">
+                        <h1>Collections</h1>
+                        <h5 class="py-2">Explore And Shop Many Different Electronic Items<br>From Our Well Known Brands.</h5>
+                        <button class="btn btn-dark btn-lg my-5">Shop Now</button>
+                    </div>
+                    <div class="col-sm-4 p-1">
+                        <img class="img-fluid fimg shadow-sm" src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/l/g/e/-original-imagsby262pkafng.jpeg?q=70&crop=false" alt="fimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Best Brands-->
+        <div class="container">
+            <div class="d-flex justify-content-around py-5 overflow-auto">
+                <div class="fs-1 p-2">SAMSUNG</div>
+                <div class="fs-1 p-2">boAt</div>
+                <div class="fs-1 p-2">MI</div>
+                <div class="fs-1 p-2">Lenovo</div>
+                <div class="fs-1 p-2">MIVI</div>
+            </div>
+            <div class="row pt-3">
+
+                <div class="col-lg-6 d-flex">
+                    <div class="fs-1" style="writing-mode: vertical-rl; text-orientation: sideways-right;">Explore New Technologies With Us</div>
+                    <div id="hoverBtn1" class="card" style="width: 100%; height: auto">
+                        <img class="card-img-top img-fluid imgcontain" src="https://m.media-amazon.com/images/I/71ZrPkGgcLL._SX679_.jpg" alt="samsung products">
+                        <div class="card-body">
+                            <div class="hoverCon1">
+                                <h5 class="float-start">SAMSUNG</h5>
+                                <h5 class="float-end">All Products</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 d-grid gap-2">
+
+                    <div id="hoverBtn2" class="card p-1" style="width: 100%;">
+                        <img class="card-img-top imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/v/f/m/-original-imagz5z4cknamu9d.jpeg?q=70&crop=false" alt="boAt products">
+                        <div class="card-body">
+                            <div class="hoverCon1">
+                                <h5 class="float-start">boAt</h5>
+                                <h5 class="float-end">All Products</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hoverBtn3" class="card p-1" style="width: 100%;">
+                        <img class="card-img-top imgcontain" src="https://rukminim2.flixcart.com/image/612/612/l4vnbm80/home-security-camera/u/a/e/3-bhr5003in-indoor-outdoor-security-camera-xiaomi-original-imagfzf2gvkeftwn.jpeg?q=70" alt="MI products">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="hoverCon1">
+                                <h5 class="float-start">MI</h5>
+                                <h5 class="float-end">All Products</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 d-grid gap-2">
+                    
+                    <div id="hoverBtn4" class="card p-1" style="width: 100%">
+                        <img class="card-img-top imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/monitor/i/i/k/l22i-40-full-hd-22-2023-67aekacbin-lenovo-original-imagxhhwceqrebw8.jpeg?q=70&crop=false" alt="Lenovo products">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="hoverCon1">
+                                <h5 class="float-start">Lenovo</h5>
+                                <h5 class="float-end">All Products</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hoverBtn5" class="card p-1" style="width: 100%">
+                        <img class="card-img-top imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/m/s/s/-original-imah34qc6vptzasv.jpeg?q=70&crop=false" alt="MIVI products">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="hoverCon1">
+                                <h5 class="float-start">MIVI</h5>
+                                <h5 class="float-end">All Products</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--sample products-->
+        <div class="container py-5">
+            <div class="fs-1 text-center py-5">Or Subscribe To The Newsletter</div>
+            
+            <div class="d-flex justify-content-between py-2">
+                <div class="d-flex justify-content-start overflow-auto">
+                    <div class="fs-5 py-2 pe-2 navHover">All Products</div>
+                    <div class="fs-5 p-2 navHover">Smartphones</div>
+                    <div class="fs-5 p-2 navHover">Headphones</div>
+                    <div class="fs-5 p-2 navHover">Smartwatches</div>
+                </div>
+                <button class="btn btn-dark">Filter</button>
+            </div> 
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/x/4/9/-original-imagtr2nezygmu4f.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>Boult Z40 Pro with 100H Battery, Quad Mic ENC, Scratch ...</p>
+                            <h6>₹1,199 78% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/n/s/7/-original-imah2d55jh6ryzjz.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>boAt Stone 350 Pro w/ Dynamic RGB LEDs, 12 HRS Playback, IPX5 & TWS Feature 14 W Bluetooth Speaker</p>
+                            <h6>₹1,499 63% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>ZEBRONICS Zeb-PixaPlay 12 (4400 lm / 1 Speaker / Remote Controller) Projector</p>
+                            <h6>₹7,999 63% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/monitor/c/0/n/-original-imagrgv53gdsxhyb.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>SAMSUNG Odyssey G3 60.96 cm (24 inch) Full HD VA Panel with Height Adjustable Stand, Eye Saver Mode, 3-Sided Borderless Display Flat Gaming Monitor</p>
+                            <h6>₹9,998 50% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/sports-action-camera/y/r/u/-original-imahyxtgj2g8uqvn.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>GoPro HERO12 DualLCDScreens 5.3K60 UltraHDVideo HyperSmooth 6.0withAutoBoostWaterproof Sports and Action Camera</p>
+                            <h6>₹29,989 33% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/computer/h/a/j/-original-imah4dcjqzqhszug.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>Lenovo IdeaPad Slim 3 Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home) 14IAH8 Thin and Light Laptop</p>
+                            <h6>₹49,190 29% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/w/f/5/36-322-38153np01-android-ios-fastrack-yes-original-imah4gmzfxpmzhxt.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>Fastrack Optimus 2 Pro,36.3mm AMOLED Display,AOD,Metal Case,Working Crown,BT Calling,SOS Smartwatch</p>
+                            <h6>₹1,799 60% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>Canon PIXMA MG2470 All-in-One Inkjet Printer</p>
+                            <h6>₹3,299 15% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--brand offers section-->
+        <img class="img-fluid" style="object-fit: cover; width: 100%;" src="https://www.boat-lifestyle.com/cdn/shop/files/DC_DESKTOP_1_1440x.jpg?v=1727154874">
+        <!--Best Seller-->
+        <div class="container py-5">
+            <div class="fs-1 text-center py-5">Our Best Sellers</div>
+            
+            <div class="d-flex justify-content-between py-2">
+                <div class="d-flex justify-content-start overflow-auto">
+                    <div class="fs-5 py-2 pe-2 navHover">All Products</div>
+                    <div class="fs-5 p-2 navHover">Smartphones</div>
+                    <div class="fs-5 p-2 navHover">Headphones</div>
+                    <div class="fs-5 p-2 navHover">Smartwatches</div>
+                </div>
+                <button class="btn btn-dark">Show All</button>
+            </div> 
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/television/k/h/w/-original-imah3868qdatnqg8.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>SAMSUNG 80 cm (32 Inch) HD Ready LED Smart Tizen TV with Bezel-Free Design</p>
+                            <h6>₹10,990 41% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/refrigerator-new/0/i/u/-original-imah43ejavvpn85d.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>Voltas Beko by A Tata Product 563 L Frost Free Side by Side Refrigerator</p>
+                            <h6>₹51,990 42% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/computer/a/6/b/-original-imah4dcjs4aedxfy.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>Lenovo LOQ Intel Core i5 13th Gen 13450HX LOQ 15IRX9D2 Gaming Laptop</p>
+                            <h6>₹72,190 33% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/router/t/v/x/archer-c50-ac1200-wireless-dual-band-tp-link-original-imahfbdzsas5pqjd.jpeg?q=70&crop=false" alt="">
+                        <div class="card-body">
+                            <a href="#"><p>TP-Link Archer C50 AC1200 Wireless Dual Band 1200 Mbps Wireless Router</p>
+                            <h6>₹1,599 55% off</h6></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Subscribe us-->
+        <div class="container-fluid bg-light">
+            <div class="container">
+                <div class="fs-1 text-center py-5">Follow Us On Instagram</div>
+                <div class="row overflow-auto">
+                    <div class="col-sm-2">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/l/c/-original-imah3xk892aj9gck.jpeg?q=70&crop=false" alt="">
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/d/g/r/-original-imahyz5xakhgchhn.jpeg?q=70&crop=false" alt="">
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/smart-glass/z/q/e/40mm-hd-lens-virtual-reality-headset-glasses-with-built-in-original-imah4kgdhgzbsud4.jpeg?q=70&crop=false" alt="">
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile-holder/y/d/x/suction-cup-multi-purpose-mobile-charging-wall-stand-plastic-original-imagn46zz9zufgkb.jpeg?q=70&crop=false" alt="">
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/lens/n/o/f/-original-imagjsavqkdmfneq.jpeg?q=70&crop=false" alt="">
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid imgcontain" src="https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/f/y/f/-original-imahy3uqgtzmdsge.jpeg?q=70&crop=false" alt="">
+                    </div>
+                </div>
+                <div class="fs-1 text-center py-5">Or Submit Your Email</div>
+                <form class="text-center p-5 mx-auto" style="width: 95%;">
+                    <div class="row px-5">
+                        <div class="col-sm-10">
+                            <input class="form-control px-2 bg-transparent border-bottom border-dark" style="border: none;" placeholder="Enter Your Email">
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn px-2 bg-transparent border-bottom border-dark" style="border: none;">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+            
+
+    
+
+
+        <!--Bootstrap JavaScript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
